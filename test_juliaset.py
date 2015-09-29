@@ -34,15 +34,15 @@ class TestRandomC:
         self.n = randint(2,100)
         self.j = JuliaSet(self.c, self.n)
         
-    def test_c_value(self):
+    def test_c_value(self): # OK
         """Test that c is an attribute"""
         assert self.j.c == self.c
     
-    def test_n_value(self):
+    def test_n_value(self): # OK 
         """Test that n is an attribute"""
         assert self.j.n == self.n
     
-    def test_juliamap(self):
+    def test_juliamap(self): # 
         """Test that juliamap is implemented properly"""
         z = rand_range()
         print "z = ", z
